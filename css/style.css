@@ -1,0 +1,378 @@
+/*---- Importación de Fuentes-------*/
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*---- Global CSS ----*/
+:root{
+    --Font:#E5E5E5;
+    --White:#FFFFFF;
+    --Navy-Blue: #191970;
+    --Medium-grey: #67808e;
+    --White-blue: #d8dfe8;
+    --RGBA:rgba(0,0,0,0.08);
+    --Medium-blue: #0a38718a;
+    --Grey: #343a40;
+    --Light-grey: #495057;
+
+    
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background: var(--White);
+}
+
+::selection{
+    background: var(--Navy-Blue);
+    color: var(--White);
+}
+
+body{
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*-----Header -----*/
+
+header{
+    position : absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+header  .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 50px;
+}
+
+/*----Main----*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    background: url(../Images/portada.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-encriptador{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.encriptar{
+    width: 660px;
+    height: 288px;
+    background:#d8dfe8;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    resize: none;
+    
+}
+
+.encriptar::placeholder,:focus{
+    color: #191970;
+    opacity: 0.5;
+    font-size: 24px;
+    
+}
+
+.warning{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute ;
+    top: 500px;
+}
+
+.warning-text{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--Medium-grey);
+}
+
+.encriptador-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--White);
+    background: var(--Navy-Blue);
+    border: 1px solid var(--Navy-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA);
+}
+
+.btn-encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--Font),
+    inset -3px -4px 8px var(--Navy-Blue);
+    color: var(--White-blue);
+}
+
+
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Navy-Blue);
+    background: var(--White-blue);
+    border: 1px solid var(--Navy-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA);
+}
+
+.btn-copy:active,
+.btn-desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--Navy-Blue),
+    inset -3px -4px 8px var(--Font);
+    color: var(--Medium-blue);
+}
+
+.info-card{
+    width: 270px;
+    height: 580px;
+    background: var(--Font);
+    box-shadow: 10px 24px 32px -8px var(--Gray);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.card-container{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--Font);
+    
+}
+
+.lock-image{
+    background: var(--Font);
+    border-radius: 32px;
+}
+
+.first-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--Gray);
+    background: var(--Font);
+}
+
+
+.second-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--Medium-grey);
+    background: var(--Font);
+}
+
+.respuesta{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Light-grey);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius:32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus{
+    outline: none;
+}
+
+.btn-copy{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--White-blue);
+    border: 1px solid var(--Navy-Blue);
+    border-radius: 20px;
+    cursor: pointer;
+}  
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copy:hover{
+    transform: scale(0.95);
+}
+
+/*--- Footer ----*/
+
+footer{
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid var(--Font);
+    color: var(--Grey);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Grey); 
+}
+
+.linkedIn:hover{
+    color: var(--Font);
+    opacity: 0.7;
+}
+
+.gitHub:hover{
+    color: var(--Font);
+    opacity: 0.6;
+}
+
+/*--- Media ---*/
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+}
+    
+
+.box-encriptador{
+    margin: 100px 0 px 0 px 0 px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.encriptador-container{
+    display: flex;
+    align-items: center;
+    position: inherit;
+}
+
+.warning{
+    position: inherit;
+    margin: 15px;
+}
+
+.info-card{
+    width: 665px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.card-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.lock-image{
+    display: none;
+}
+
+.btn-copy{
+    position: inherit;
+    width: 100%;
+}
+
+.evaluar{
+    width: 100%;
+    height: 210px;
+    padding: 10px;
+
+}
+
+
+
+}
+
+@media(max-width: 720px){
+
+header .logo{
+    width: 100%;
+    background: var(--White);
+    padding: 2px;
+}
+.encriptar{
+    width: 90%;
+    font-size: 24px;
+}
+
+.encriptador-container{
+    display: grid;
+    gap: 21px;
+}
+
+.info-card{
+    width: 90%;
+}
+.copyright{
+    font-size: 20px;
+}
+}
